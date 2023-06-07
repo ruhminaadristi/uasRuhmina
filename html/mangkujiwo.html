@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EndGame</title>
+  <style>
+     body {
+      font-family: Arial, sans-serif;
+      background-image: url(../gambar/gambar3.jpg);
+      background-size: cover;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 35px;
+    }
+
+    .ticket {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 0 auto;
+      max-width: 400px;
+    }
+
+    .ticket img {
+      width: 170px;
+      height: 225px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    p {
+      color: #777;
+      margin-bottom: 5px;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+      text-align: left;
+    }
+
+    input[type="number"] {
+      width: 95%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"],
+    button[type="reset"] {
+      background-color: #042331;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover,
+    button[type="reset"]:hover {
+      background-color: grey;
+    }
+
+  </style>
+</head>
+<body>
+    <h1>Tiket Bioskop</h1>
+  
+  
+  <form method="POST" action="../php/create.php">
+        <div class="ticket">
+          <a href="../html/tiket.html"><img src="../gambar/mangkujiwo.jpg" alt=""></a>
+          <h2>MANGKUJIWO</h2>
+          <p>Genre : Horor</p>
+          <p>Durasi Tayang : 1 jam 46 menit</p>
+          <p>Jam Tayang: 19:00</p><br>
+
+          <label for="jumlah">Jumlah:</label>
+          <input type="number" name="jumlah" required><br><br>
+
+          <input type="submit" name="pesanFilmmangkujiwo" value="Pesan">
+          <button type="reset">Reset</button>
+        </div><br>
+    </form>
+  
+</body>
+</html>
